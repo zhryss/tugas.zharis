@@ -31,21 +31,30 @@ html {
     background-color: tomato;
     transition: .3s ease-in-out;
     transition-delay: .2s;
-    border-radius: 8px;
 }
 
 .a-navbar {
     color: white;
     text-decoration: none;
     font-weight: 800;
+    border: 2px solid white; /* Garis di seluruh sisi */
+    padding: 10px 20px; /* Memberikan jarak di dalam border */
+    border-radius: 8px; /* Membuat sudut border menjadi melengkung */
 }
 
 .container-content {
     background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Membuat konten di dalamnya sejajar */
+    justify-content: center; /* Memusatkan konten di tengah */
+    align-items: center; /* Mengatur posisi vertikal */
     height: 80vh;
+    gap: 20px; /* Jarak antara kedua konten */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* Mengatur konten di dalam kontainer ini secara vertikal */
+    align-items: center; /* Memusatkan konten secara vertikal */
 }
 
 .a-content {
@@ -53,7 +62,7 @@ html {
     color: black;
     text-decoration: none;
     font-size: 30px;
-    width: 720px;
+    width: 700px;
     height: 480px;
     display: flex;
     flex-direction: column;
@@ -68,7 +77,7 @@ html {
 .img-content {
     width: 50%;
     heigth: 50%;
-    border-radius: 80px;
+    border-radius: 50px;
 }
 
 .container-footer {
