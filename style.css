@@ -31,38 +31,59 @@ html {
     background-color: tomato;
     transition: .3s ease-in-out;
     transition-delay: .2s;
+    border-radius: 8px;
+    border-color: white;
 }
 
 .a-navbar {
     color: white;
     text-decoration: none;
     font-weight: 800;
-    border: 2px solid white; /* Garis di seluruh sisi */
-    padding: 10px 20px; /* Memberikan jarak di dalam border */
-    border-radius: 8px; /* Membuat sudut border menjadi melengkung */
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 .container-content {
     background-color: #f7f7f7;
-    display: flex; /* Membuat konten di dalamnya sejajar */
-    justify-content: center; /* Memusatkan konten di tengah */
-    align-items: center; /* Mengatur posisi vertikal */
-    height: 80vh;
-    gap: 20px; /* Jarak antara kedua konten */
-}
-
-.content-container {
     display: flex;
-    flex-direction: column; /* Mengatur konten di dalam kontainer ini secara vertikal */
-    align-items: center; /* Memusatkan konten secara vertikal */
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
+.container-content-2 {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 870px; /* Atur tinggi */
+    flex-wrap: wrap; /* Memungkinkan elemen membungkus */
+}
+
+.a-content-2 {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    width: 720px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-top: -500px; /* Menggeser ke atas */
+}
 .a-content {
     background-color: white;
     color: black;
     text-decoration: none;
     font-size: 30px;
-    width: 700px;
+    width: 720px;
     height: 480px;
     display: flex;
     flex-direction: column;
@@ -77,7 +98,7 @@ html {
 .img-content {
     width: 50%;
     heigth: 50%;
-    border-radius: 50px;
+    border-radius: 80px;
 }
 
 .container-footer {
